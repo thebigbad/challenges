@@ -4,6 +4,10 @@ Completed:
 
 * greplin
 
+In Progress:
+
+* project euler
+
 TODO:
 
 * thesixtyone

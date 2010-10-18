@@ -1,0 +1,80 @@
+#! /usr/bin/env pez
+# real  0m0.008s
+# user  0m0.000s
+# sys 0m0.008s
+
+: incIfSunday ( sundays days -- sundays days )
+  7 mod dup 0= if
+    swap 1+ swap
+  then
+;
+
+: advanceAYear ( year sundays days -- year sundays days )
+  # jan
+  incIfSunday
+  31 +
+
+  # feb
+  incIfSunday
+  28 +
+  # leap years are crazy
+  2 pick 4 mod 0= if
+    1+
+    2 pick 100 mod 0= if
+      2 pick 400 mod 0 <> if
+        1-
+      then
+    then
+  then
+
+  # march
+  incIfSunday
+  31 +
+
+  # april
+  incIfSunday
+  30 +
+
+  # may
+  incIfSunday
+  31 +
+
+  # june
+  incIfSunday
+  30 +
+
+  # july
+  incIfSunday
+  31 +
+
+  # aug
+  incIfSunday
+  31 +
+
+  # sep
+  incIfSunday
+  30 +
+
+  # oct
+  incIfSunday
+  31 +
+
+  # nov
+  incIfSunday
+  30 +
+
+  # dec
+  incIfSunday
+  31 +
+;
+
+: loopThroughYears ( days -- sundays )
+  0 swap
+  2001 1901 do
+    i -rot advanceAYear rot drop
+  loop
+  drop
+;
+
+# jan 1, 1900 was a monday
+1900 0 1 advanceAYear -rot drop drop loopThroughYears . cr

@@ -1,0 +1,42 @@
+#! /usr/bin/env pez
+# real  0m4.047s
+# user  0m4.040s
+# sys 0m0.004s
+
+: d ( n -- sum of proper divisors )
+  dup 2 <= if
+    drop 1
+  else
+    0 swap
+    dup 1 do
+      i
+      2dup mod 0= if
+        rot + swap
+      else
+        drop
+      then
+    loop
+    drop
+  then
+;
+
+: addIfAmicable ( sum n -- 'sum )
+  dup d 2dup d = if
+    2dup > if
+      + +
+    else
+      drop drop
+    then
+  else
+    drop drop
+  then
+;
+
+: evaluateSum ( -- sum )
+  0
+  10000 1 do
+    i addIfAmicable
+  loop
+;
+
+evaluateSum . cr

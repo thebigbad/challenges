@@ -1,0 +1,15 @@
+#! /usr/bin/env pez
+
+: this_function_exists_solely_so_I_can_loop
+  1000 3 do
+    i +
+  3 +loop
+  1000 5 do
+    i +
+  5 +loop
+  1000 15 do
+    i -
+  15 +loop
+;
+
+0 this_function_exists_solely_so_I_can_loop . cr

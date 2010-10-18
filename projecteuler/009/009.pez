@@ -1,0 +1,26 @@
+#! /usr/bin/env pez
+# real  0m0.032s
+# user  0m0.032s
+# sys 0m0.004s
+
+: square dup * ;
+
+: pythagoreanTriplet? ( a b c -- a b c bool )
+  dup square 2 pick square 4 pick square + =
+;
+
+: findTriplet
+  999 335 do
+    i 1000 over 1 + - 333 swap do
+      i 2dup + 1000 swap -
+        pythagoreanTriplet? if
+          * * . quit
+        else
+          drop drop
+        then
+    -1 +loop
+    drop
+  -1 +loop
+;
+
+findTriplet

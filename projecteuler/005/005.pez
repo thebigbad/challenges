@@ -1,0 +1,43 @@
+#! /usr/bin/env pez
+# real  0m0.008s
+# user  0m0.004s
+# sys 0m0.008s
+
+# I find this naive impl to be hi-larious -- it's the def of primality!
+# no need to speed it up, since it's only used 18 times with n < 20
+: prime?
+  1
+  begin
+    1+ 2dup mod
+  0= until
+  =
+;
+
+# the answer must be a multiple of the product of all the primes less than 20
+: productOfPrimes<20 ( -- product )
+  1
+  20 2 do
+    i dup prime? if *  else drop then
+  loop
+;
+
+productOfPrimes<20 constant inc
+
+: evenly_divides_3_to_x ( number_to_try -- number_to_try x )
+  2
+  begin
+    1 +
+    2dup mod
+  0 <> until
+  1 -
+;
+
+: find_first_to_divide_evenly_1_to_20 ( -- first )
+  0
+  begin
+    inc +
+    evenly_divides_3_to_x
+  20 >= until
+;
+
+find_first_to_divide_evenly_1_to_20 . cr
