@@ -61,3 +61,17 @@ the subsets would be
 Here is the list of numbers you should run your code on.
 The password is the number of subsets.  In the above case the
 answer would be 4.
+
+The End
+
+----------------------------------------
+
+Congratulations.  You completed the challenge.  Your completion code is.
+
+We'd love to talk to you - send your completion code, the code you wrote
+during the challenge, and your resume to
+
+jobs+i+solved+the+challenge@greplin.com
+
+Even if you're not looking for a job, we'd love to hear what you thought
+about the challenge.
