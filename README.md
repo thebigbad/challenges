@@ -7,6 +7,7 @@ Completed:
 In Progress:
 
 * project euler
+* hyperpublic
 
 TODO:
 
