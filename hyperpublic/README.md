@@ -17,7 +17,6 @@
      OOOX
      OOOO
      OOOO
-          
 
     Use the input file here to determine what the highest influence score is among 100 random Hyperpublic users. To compute the answer to problem 1, append the top 3 influence totals together in descending order. (For example if they are 17, 5, and 3 then submit 1753)
 
@@ -40,3 +39,13 @@
     Amazingly, they've all accomplished these totals in the minimum number of tasks possible in order to reach each amount. For example, if their total was 6 points they would have accomplished this in just 2 tasks (2 "Add Thing" tasks), as opposed to accomplishing it by 3 "Add Place" tasks. Your job is to compute how many total tasks each user has completed. After you've done so, find the answer to Problem 2 using the following formula:
 
     Problem 2 Answer = Doug's total tasks * Jordan's total tasks * Eric's total tasks * Jonathan's total tasks
+
+    Congratulations. You are web-scale!
+
+    You've successfully completed the Hyperpublic Programming Challenge. Awesome!
+
+    Here's your completion token: XXXXXXXX Email it to us!
+
+    Email your completion token to challenge@hyperpublic.com, along with any code you've written to help solve the challenge, and you'll be entered in the prize raffle to take place on Monday, February 28.
+
+    Hyperpublic is working on big problems around local data capture, search, indexing, and classification, and we're always looking for great hackers to bounce ideas off of. If you're interested in free office space and/or hearing more about Hyperpublic, let us know in your email.
