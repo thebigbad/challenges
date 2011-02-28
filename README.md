@@ -8,6 +8,7 @@ Completed:
 In Progress:
 
 * project euler
+![my project euler badge](http://projecteuler.net/profile/rwolf.png)
 
 TODO:
 
