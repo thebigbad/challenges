@@ -26,7 +26,6 @@ answer = 1
 
 for i,points in ipairs({2349, 2102, 2001, 1747}) do
   t = opt[points]
-  print(t)
   answer = answer * t
 end
 
