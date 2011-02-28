@@ -3,11 +3,11 @@ Programming puzzles are fun, and sharing is fun, ergo sharing my solutions to pr
 Completed:
 
 * greplin
+* hyperpublic
 
 In Progress:
 
 * project euler
-* hyperpublic
 
 TODO:
 
