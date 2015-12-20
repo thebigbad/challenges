@@ -1,16 +1,20 @@
 Programming puzzles are fun, and sharing is fun, ergo sharing my solutions to programming puzzles is fun ** 2... or something.
 
-Completed:
+Completed
+---
 
 * greplin
 * hyperpublic
 
-In Progress:
+In Progress
+---
 
 * project euler
 ![my project euler badge](http://projecteuler.net/profile/rwolf.png)
 
-TODO:
+License
+---
 
-* thesixtyone
-* glyphtree - what's the deal with not including a sample input?
+Programming challenge source material doesn't belong to me.
+
+My solutions are licensed under the MIT license. See LICENSE for more information.
