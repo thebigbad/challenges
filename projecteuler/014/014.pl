@@ -14,7 +14,7 @@ for(my $i = 15; $i < 1_000_000; $i += 2) {
     $highest_count = $count;
   }
 }
-print "$highest_start: $highest_count\n";
+print "$highest_start\n";
 
 sub count_hailstones {
   my $n = shift;
