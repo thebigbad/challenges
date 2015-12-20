@@ -1,4 +1,4 @@
-#!/usr/bin/io
+#!/usr/local/bin/io
 
 m := 600851475143
 n := 1

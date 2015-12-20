@@ -1,4 +1,4 @@
-#!/usr/bin/io
+#!/usr/local/bin/io
 
 i := 1
 j := 2

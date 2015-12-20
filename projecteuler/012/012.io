@@ -1,4 +1,4 @@
-#!/usr/bin/io
+#!/usr/local/bin/io
 
 d := method(n,
   d := 1

@@ -1,4 +1,4 @@
-#!/usr/bin/io
+#!/usr/local/bin/io
 
 list(
   list(191, "one"),

@@ -1,4 +1,4 @@
-#!/usr/bin/io
+#!/usr/local/bin/io
 
 nextFour := method(current, step,
   list(1, 2, 3, 4) map(v, current + (step * v))
