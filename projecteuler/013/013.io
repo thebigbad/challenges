@@ -1,4 +1,5 @@
 #!/usr/local/bin/io
+# expects to be run from dir containing sample.txt
 
 sum := 0
 
